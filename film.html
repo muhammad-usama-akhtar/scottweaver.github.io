@@ -27,28 +27,32 @@
 
     <!-- Custom Styles -->
     <style>
+      /* Styles for the top section above the video */
+      body {
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
       /* Center the video */
       .video-container {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 aspect ratio, adjust if needed */
-        padding-top: 50px; /* Adjust this value to move the video down */
         height: 0;
         overflow: hidden;
       }
 
       .video-container iframe {
-		
-		  padding-top: 100px;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 90%;
       }
 
-      body {
-        background-color: #285c9c;
-        color: white;
+      /* Styles for the bottom section below the video */
+      .bottom-section {
+        background-color: white;
       }
 
       /* Styles for the footer */
@@ -89,10 +93,9 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav mu-menu navbar-right">
                 <li><a href="index.html">HOME</a></li>
-               
                 <li><a href="#mu-author">AUTHOR</a></li>
-               <li><a href="#">Speaker</a></li>
-                    <li><a href="#">Film</a></li>
+                <li><a href="#">Speaker</a></li>
+                <li><a href="#">Film</a></li>
                 <li><a href="#mu-testimonials">BLOG</a></li>
                 <li><a href="#mu-contact">CONTACT</a></li>
               </ul>
@@ -103,9 +106,41 @@
     </header>
     <!-- End Header -->
 
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/7MxTsqxMBJM" frameborder="0" allowfullscreen></iframe>
+    <!-- Top section above the video -->
+    <div style="background-color: #285c9c; padding: 50px 0; text-align: center;">
+      <!-- Your content for the top section goes here -->
+      
     </div>
+
+  <!-- Video container -->
+<div class="video-container" style=""><!-- Adjust the value as needed -->
+  <iframe src="https://www.youtube.com/embed/7MxTsqxMBJM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+	  
+<div class="bottom-section">
+  <!-- Your content for the bottom section goes here -->
+  <div style="max-width: 800px; margin: 0 auto; padding: 20px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+
+    <!-- Image 1 -->
+    <div style="flex: 1; box-sizing: border-box; margin: 0 50px 0 0; transform: scale(1.2);">
+      <img src="assets/2019-09-poster.png" alt="Book Cover 1" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+
+    <!-- Image 2 -->
+    <div style="flex: 1; box-sizing: border-box; margin: 0 0 0 50px; transform: scale(1.27);">
+      <img src="assets/2018-10-Pilots-of-ThunderbirdField-scott-weaver.jpg" alt="Book Cover 2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    </div>
+
+  </div>
+</div>
+<br><br>
+
+
+
+
+
+	  
 
     <!-- Start footer -->
     <footer id="mu-footer" role="contentinfo">
@@ -121,21 +156,4 @@
         </div>
       </div>
     </footer>
-    <!-- End footer -->
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- Bootstrap -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Slick slider -->
-    <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <!-- Counter js -->
-    <script type="text/javascript" src="assets/js/counter.js"></script>
-    <!-- Ajax contact form  -->
-    <script type="text/javascript" src="assets/js/app.js"></script>
-   
-    <!-- Custom js -->
-    <script type="text/javascript" src="assets/js/custom.js"></script>
-  </body>
-</html>
+    <!-- End footer
